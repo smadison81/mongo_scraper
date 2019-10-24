@@ -5,7 +5,7 @@ html {
   
   body {
     margin-bottom: 80px;
-    background-image: url("../images/cyber.png");
+    background-color: lightgray;
   }
   
   .footer {
@@ -19,6 +19,7 @@ html {
   
   .navbar {
     margin-bottom: 0;
+    color: white;
   }
   
   .jumbotron {
@@ -43,7 +44,7 @@ html {
   
   .jumbotron .background-image {
     height: 100%;
-    background-image: url("../images/newspaper.jpg");
+    background-image: url("../images/pac.jpg");
     background-size: cover;
   }
   
@@ -99,8 +100,9 @@ html {
     right: 160px;
   }
   
-  .card .panel-body {
-    font-size: 16px;
+  .panel .panel-body {
+    font-size: 15px;
+    background-color: white;
   }
   
   .panel .panel-heading .article-link {
