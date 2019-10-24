@@ -4,18 +4,18 @@ var cheerio = require("cheerio");
 var request = require("request");
 
 var scrape = function(cb) {
-  request("http://www.nytimes.com", function(err, res, body) {
+  request("https://www.gameinformer.com", function(err, res, body) {
     var $ = cheerio.load(body);
 
     var articles = [];
 
-    $(".theme-summary").each(function(i, element) {
+    $("div.article-summary").each(function(i, element) {
       var head = $(this)
-        .children(".story-heading")
+        .children(".article-title")
         .text()
         .trim();
       var sum = $(this)
-        .children(".summary")
+        .children(".article-headline")
         .text()
         .trim();
 
